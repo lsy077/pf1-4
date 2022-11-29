@@ -1,0 +1,91 @@
+.scroll{
+    background-color: rgba(0,0,0,0.6);
+    font-size: 0;
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 20px);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #bcbaba;
+    animation-name: updown;
+    animation-duration:2s;
+    animation-iteration-count:infinite;  
+    animation-timing-function: ease-in-out;
+}
+@keyframes updown{
+    0%{
+  
+    }
+    50%{
+        transform: translateY(-15px); 
+    }
+    100%{
+        
+    }
+} 
+/* @keyframes updown{
+    0%{
+        transform: translateX(0px) translateY(0px); X지표 y지표 (0 0)
+    }
+    25%{
+        transform: translateX(100px);
+    }
+    50%{
+        transform: translateX(100px) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0px) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+} */
+.scroll::before{
+    content: ""; 
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation-name: down1;
+animation-duration: 1s;    
+animation-iteration-count: infinite; /* 3로하면 3번 반복, infinite무한 반복 */ 
+animation-delay: 0.3s; /* 0.3s지연하고 실행하다 */
+}
+.scroll::after{
+    content: ""; 
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation-name: down1;
+    animation-duration: 1s;    
+    animation-iteration-count: infinite;
+}
+@keyframes down1{
+    0%{ /* 시작 */
+        opacity: 1;
+    }
+    50%{ /* 중간 */
+/*          transform: translateY(10px) rotate(45deg);  */
+           opacity: 0;
+    }
+    100%{ /* 종료 */
+        transform: translateY(0px) rotate(45deg);  
+           opacity: 1;
+    }
+}
+
+
+
+

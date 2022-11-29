@@ -1,0 +1,204 @@
+footer {
+  color: #fff; 
+  }
+  footer a{
+    color: #fff;
+  }
+  footer .top {
+   
+  background-color: #333;
+  }
+  footer .top .wrap {
+  column-count: 2;
+  }
+  footer .top .wrap>*{
+  /*! display: inline-block; */
+  }
+  footer .top .wrap ul.fnb {
+  column-span: all;
+  display: flex;
+  }
+  footer .top .wrap ul.fnb li {
+   
+  }
+
+  footer .top .wrap ul.fnb li a {
+   
+  padding: 10px 15px;
+  display: block;
+  color: #999;
+  }
+footer .top .wrap ul.fnb li:nth-child(1) a{
+  padding-left: 0;
+}
+footer .top .wrap ul.fnb li:nth-child(n+4):nth-child(-n+5) a{
+  color: #fff;
+}
+  footer .top .wrap address {
+  column-span: all;
+  line-height: 2;
+  }
+  footer .top .wrap address span {
+   
+  }
+  footer .top .wrap p {
+   
+  column-span: all;
+  margin-bottom: 20px;
+  }
+  footer .top .wrap h1 {
+  height: 70px;
+  }
+  footer .top .wrap h1 a {
+  font-size: 10px;
+  display: inline-block;
+  text-align: center;
+  }
+  footer .top .wrap h1 a strong {
+  font-size: 20px;
+  display: block;
+  }
+footer .top .wrap h1 a strong::after{
+  content:"";
+  width: 95%;
+  display: block;
+  border-bottom: 3px solid #fff;
+  margin: 0 auto;
+  margin-top:3px;
+  margin-bottom:3px; 
+}
+  footer .top .wrap ul.sns {
+  display: flex;
+  gap: 20px;
+  }
+  footer .top .wrap ul.sns li {
+  }
+  footer .top .wrap ul.sns li a {
+  font-size: 0;
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  }
+ footer .top .wrap ul.sns li:nth-child(1) a {
+   background-image: url(../img/u.svg);
+ }
+footer .top .wrap ul.sns li:nth-child(1) a:hover {
+   background-image: url(../img/u-on.svg);
+ }
+footer .top .wrap ul.sns li:nth-child(2) a {
+   background-image: url(../img/n.svg);
+ }
+footer .top .wrap ul.sns li:nth-child(3) a {
+   background-image: url(../img/f.svg);
+ }
+footer .top .wrap ul.sns li:nth-child(4) a {
+   background-image: url(../img/i.svg);
+ }
+footer .top .wrap ul.sns li:nth-child(5) a {
+   background-image: url(../img/k.svg);
+ }
+footer .top .wrap ul.sns li:nth-child(6) a {
+   background-image: url(../img/in.svg);
+ }
+  footer .bottom {
+  color: #000;
+  }
+ footer .bottom a{
+  color: #000;
+  }
+  footer .bottom .wrap {
+   
+  display: flex;
+  }
+  footer .bottom .wrap h2 {
+   
+  }
+  footer .bottom .wrap figure {
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  }
+  footer .bottom .wrap figure img {
+  max-width: 100%;
+  }
+footer .bottom .wrap figure:nth-of-type(2) img {
+  min-height: 28px;
+}
+footer .bottom .wrap figure:nth-of-type(3) img {
+  max-height: 30px;
+}
+  footer .bottom .wrap figure figcaption {
+   
+  display: none;
+  }
+  footer .bottom .wrap figure figcaption dl {
+   
+  }
+  footer .bottom .wrap figure figcaption dl dt {
+   
+  }
+  footer .bottom .wrap figure figcaption dl dd {
+   
+  }
+/*
+  footer a.top{
+  position: fixed;
+  right: 30px;
+  bottom: 116px;
+  font-size: 0;
+  border: 20px solid green;
+  border-bottom-width: 30px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  background-color: transparent;
+  }
+  footer a.top::before{
+    content: "";
+  }
+  footer a.top::after{
+    content: "top";
+    font-size: 12px;
+    color: white;
+    position: absolute;
+  }
+*/
+footer a.top{
+  position: fixed;
+  right: 30px;
+  bottom: 116px;
+  font-size: 0;
+  border: 20px solid green;
+  border-bottom-width: 30px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  background-color: transparent;
+  }
+  footer a.top::before{
+    content: "";
+    border: 16px solid #fff;
+    border-top-color: green;
+    border-right-color: green;
+    border-bottom-width: 20px;
+    border-left-color: green;
+    border-bottom-width: 25px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    left: -16px;
+    top:-13px;
+  }
+  footer a.top::after{
+    content: "top";
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    width: 40px;
+    right: -20px;
+    text-align: center;
+    line-height: 37px;
+  }
